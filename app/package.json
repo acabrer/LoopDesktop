@@ -1,0 +1,19 @@
+{
+  "name": "loopapp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac"
+  },
+  "build": {
+    "appId": "com.yourcompany.loopapp",
+    "mac": {
+      "category": "public.app-category.music"
+    }
+  },
+  "devDependencies": {
+    "electron": "^13.0.0",
+    "electron-builder": "^22.11.7"
+  }
+}
