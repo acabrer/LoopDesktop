@@ -4,7 +4,8 @@
     "main": "main.js",
     "scripts": {
       "start": "electron .",
-      "build": "electron-builder build --mac"
+      "build": "electron-builder build --mac",
+      "build:addon": "cd native-addons/audio-engine && node-gyp configure build"
     },
     "build": {
       "appId": "com.yourcompany.loopapp",

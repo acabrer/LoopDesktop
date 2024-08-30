@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>LoopApp</title>
-  </head>
-  <body>
-    <h1>Welcome to LoopApp</h1>
-    <div id="app"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopDesktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>LoopDesktop</h1>
+        </header>
+        <main>
+            <section id="loop-browser">
+                <h2>Loop Browser</h2>
+                <ul id="loop-list">
+                    <!-- Loop items will be dynamically added here -->
+                </ul>
+            </section>
+            <section id="mixer">
+                <h2>Mixer</h2>
+                <div id="mixer-channels">
+                    <!-- Mixer channels will be dynamically added here -->
+                </div>
+            </section>
+            <section id="playback-controls">
+                <h2>Playback Controls</h2>
+                <div id="controls">
+                    <button id="play">Play</button>
+                    <button id="pause">Pause</button>
+                    <button id="stop">Stop</button>
+                </div>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="renderer.js"></script>
-  </body>
+</body>
 </html>
