@@ -2,7 +2,7 @@
 // The AudioEngineWrapper class inherits from Napi::ObjectWrap, which is a class provided by the N-API library that allows C++ classes to be exposed to JavaScript.
 
 
-#include "audio_engine_wrapper.h"   // include the header file
+#include "./audio_engine_wrapper.h"   // include the header file
 #include "../../native/audio/AudioEngine.h" // include the AudioEngine header file
 #include "../JuceLibraryCode/JuceHeader.h" // include the JUCE library
 
